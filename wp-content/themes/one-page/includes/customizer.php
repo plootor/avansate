@@ -365,7 +365,7 @@ class Onepage_Customizer {
 //                )
 //        );
         /**
-         * Video heading section
+         * Our Story heading section
          */
         $wp_customize->add_section('story_heading_setting_section', array(
                 'title' => __('Heading Settings', 'one-page'),
@@ -375,14 +375,34 @@ class Onepage_Customizer {
                 'capability' => 'edit_theme_options'
             )
         );
-        /**
-         * Video settings
-         */
+
         $wp_customize->add_section('story_setting_section', array(
                 'title' => __('Content Settings', 'one-page'),
                 'description' => __('Allows you to set content.', 'one-page'), //Descriptive tooltip
                 'panel' => 'story_setting_panel',
                 'priority' => '11',
+                'capability' => 'edit_theme_options'
+            )
+        );
+
+        /**
+         * Latest Post section panel
+         * @return array
+         */
+        $wp_customize->add_panel('latestpost_setting_panel', array(
+                'title' => __('Latest Post Section', 'one-page'),
+                'description' => __('Allows you to...', 'one-page'), //Descriptive tooltip
+                'capability' => 'edit_theme_options'
+            )
+        );
+        /**
+         * Latest Post heading section
+         */
+        $wp_customize->add_section('latestpost_heading_setting_section', array(
+                'title' => __('Heading Settings', 'one-page'),
+                'description' => __('Allows you to set up Latest Post headings.', 'one-page'), //Descriptive tooltip
+                'panel' => 'latestpost_setting_panel',
+                'priority' => '10',
                 'capability' => 'edit_theme_options'
             )
         );
@@ -887,6 +907,9 @@ class Onepage_Customizer {
             'story_heading_setting_section' => array(
                 'onepage_story_heading'
             ),
+            'latestpost_heading_setting_section' => [
+                'onepage_latestpost_heading'
+            ],
             'story_setting_section' => array(
                 'onepage_story_iframe',
                 'onepage_story_subtext'
@@ -2024,6 +2047,14 @@ You can refer the codes from links below. %s', 'one-page') . '<br>' . esc_attr('
                 'id' => 'onepage_options[onepage_story_heading]',
                 'label' => __('Main Heading', 'one-page'),
                 'description' => __('Write main heading for the Story section', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ),
+            'onepage_latestpost_heading' => array(
+                'id' => 'onepage_options[onepage_latestpost_heading]',
+                'label' => __('Main Heading', 'one-page'),
+                'description' => __('Write main heading for the Latest Post section', 'one-page'),
                 'type' => 'option',
                 'setting_type' => 'text',
                 'default' => ''
