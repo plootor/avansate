@@ -86,304 +86,6 @@ class Onepage_Customizer {
                 'capability' => 'edit_theme_options'
             )
         );
-        /**
-         * Slider Section Panel and sub-sections
-         */
-        $wp_customize->add_panel('slider_setting_panel', array(
-                'title' => __('Slider Section', 'one-page'),
-                'description' => __('Allows you to set up Slider section for OnePage Theme.', 'one-page'), //Descriptive tooltip
-//            'priority' => '10',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Slider setting section
-         */
-        $wp_customize->add_section('slider_setting_section', array(
-                'title' => __('Settings', 'one-page'),
-                'description' => __('Allows you to change slider settings for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'slider_setting_panel',
-                'priority' => '10',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Slider #1 section
-         */
-        $wp_customize->add_section('slider_one_setting_section', array(
-                'title' => __('Slider #1', 'one-page'),
-                'description' => __('Allows you to set up slider one for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'slider_setting_panel',
-                'priority' => '11',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Slider #2 section
-         */
-        $wp_customize->add_section('slider_two_setting_section', array(
-                'title' => __('Slider #2', 'one-page'),
-                'description' => __('Allows you to set up slider two for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'slider_setting_panel',
-                'priority' => '12',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Slider #3 section
-         */
-        $wp_customize->add_section('slider_three_setting_section', array(
-                'title' => __('Slider #3', 'one-page'),
-                'description' => __('Allows you to set up slider three for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'slider_setting_panel',
-                'priority' => '13',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Slider #4 section
-         */
-        $wp_customize->add_section('slider_four_setting_section', array(
-                'title' => __('Slider #4', 'one-page'),
-                'description' => __('Allows you to set up slider four for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'slider_setting_panel',
-                'priority' => '14',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Slider #5 section
-         */
-        $wp_customize->add_section('slider_five_setting_section', array(
-                'title' => __('Slider #5', 'one-page'),
-                'description' => __('Allows you to set up slider five for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'slider_setting_panel',
-                'priority' => '15',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Slider transition section
-         */
-        $wp_customize->add_section('slider_transition_setting_section', array(
-                'title' => __('Slider Transition Effects', 'one-page'),
-                'description' => __('Allows you to set up slider transition effects for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'slider_setting_panel',
-                'priority' => '16',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Slider transition section
-         */
-        $wp_customize->add_section('slider_overlay_setting_section', array(
-                'title' => __('Slider Overlay Color Settings', 'one-page'),
-                'description' => __('Allows you to set up slider Overlay colors for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'slider_setting_panel',
-                'priority' => '17',
-                'capability' => 'edit_theme_options'
-            )
-        );
-
-        /**
-         * Service section panel
-         */
-        $wp_customize->add_panel('service_setting_panel', array(
-                'title' => __('Services Section', 'one-page'),
-                'description' => __('Allows you to set up services section for OnePage Theme.', 'one-page'), //Descriptive tooltip
-//            'priority' => '11',
-                'capability' => 'edit_theme_options'
-            )
-        );
-
-        /**
-         * Service boxes headings section
-         */
-        $wp_customize->add_section('service_heading_setting_section', array(
-                'title' => __('Heading Settings', 'one-page'),
-                'description' => __('Allows you to set up service section headings for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'service_setting_panel',
-                'priority' => '10',
-                'capability' => 'edit_theme_options'
-            )
-        );
-
-
-
-        /**
-         * Service Box #1 section
-         */
-        $wp_customize->add_section('service_box_one_setting_section', array(
-                'title' => __('Box #1', 'one-page'),
-                'description' => __('Allows you to set up service box #1 for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'service_setting_panel',
-                'priority' => '11',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Service Box #2 section
-         */
-        $wp_customize->add_section('service_box_two_setting_section', array(
-                'title' => __('Box #2', 'one-page'),
-                'description' => __('Allows you to set up service box #2 for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'service_setting_panel',
-                'priority' => '12',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Service Box #3 section
-         */
-        $wp_customize->add_section('service_box_three_setting_section', array(
-                'title' => __('Box #3', 'one-page'),
-                'description' => __('Allows you to set up service box #3 for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'service_setting_panel',
-                'priority' => '13',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Service Box #4 section
-         */
-        $wp_customize->add_section('service_box_four_setting_section', array(
-                'title' => __('Box #4', 'one-page'),
-                'description' => __('Allows you to set up service box #4 for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'service_setting_panel',
-                'priority' => '14',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Service boxes color section
-         */
-        $wp_customize->add_section('service_color_setting_section', array(
-                'title' => __('Color Settings', 'one-page'),
-                'description' => __('Allows you to set up service boxes color for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'service_setting_panel',
-                'priority' => '15',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Blog & News section panel
-         * @return array
-         */
-        $wp_customize->add_panel('blog_setting_panel', array(
-                'title' => __('Blog & News Section', 'one-page'),
-                'description' => __('Allows you to set up Blog & News Section for OnePage Theme.', 'one-page'), //Descriptive tooltip
-//            'priority' => '11',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Blog & News color section
-         */
-        $wp_customize->add_section('blog__section_color_setting', array(
-                'title' => __('Color Settings', 'one-page'),
-                'description' => __('Allows you to set up Blogs & News section color for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'blog_setting_panel',
-                'priority' => '12',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Blog & News heading section
-         */
-        $wp_customize->add_section('blog_heading_setting_section', array(
-                'title' => __('Heading Settings', 'one-page'),
-                'description' => __('Allows you to set up  Blog & News section headings for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'blog_setting_panel',
-                'priority' => '10',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Blog & News settings
-         */
-        $wp_customize->add_section('blog_setting_section', array(
-                'title' => __('Settings', 'one-page'),
-                'description' => __('Settings for Blog & News section.', 'one-page'), //Descriptive tooltip
-                'panel' => 'blog_setting_panel',
-                'priority' => '11',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Portfolio section panel
-         * @return array
-         */
-        $wp_customize->add_panel('portfolio_setting_panel', array(
-                'title' => __('Portfolio Section', 'one-page'),
-                'description' => __('Allows you to create a portfolio for OnePage Theme.', 'one-page'), //Descriptive tooltip
-//            'priority' => '11',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Portfolio color section
-         */
-        $wp_customize->add_section('portfolio_section_color_setting', array(
-                'title' => __('Color Settings', 'one-page'),
-                'description' => __('Allows you to set up portfolio section color for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'portfolio_setting_panel',
-                'priority' => '11',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Portfolio heading section
-         */
-        $wp_customize->add_section('portfolio_heading_setting_section', array(
-                'title' => __('Portfolio Settings', 'one-page'),
-                'description' => __('Allows you to set up portfolio settings for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'portfolio_setting_panel',
-                'priority' => '10',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Video section panel
-         * @return array
-         */
-        $wp_customize->add_panel('story_setting_panel', array(
-                'title' => __('Our Story Section', 'one-page'),
-                'description' => __('Allows you to...', 'one-page'), //Descriptive tooltip
-//            'priority' => '11',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Video color section
-         */
-//        $wp_customize->add_section('video_section_color_setting', array(
-//            'title' => __('Color Settings', 'one-page'),
-//            'description' => __('Allows you to set up video section color for OnePage Theme.', 'one-page'), //Descriptive tooltip
-//            'panel' => 'video_setting_panel',
-//            'priority' => '12',
-//            'capability' => 'edit_theme_options'
-//                )
-//        );
-        /**
-         * Our Story heading section
-         */
-        $wp_customize->add_section('story_heading_setting_section', array(
-                'title' => __('Heading Settings', 'one-page'),
-                'description' => __('Allows you to set up video headings for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'story_setting_panel',
-                'priority' => '10',
-                'capability' => 'edit_theme_options'
-            )
-        );
-
-        $wp_customize->add_section('story_setting_section', array(
-                'title' => __('Content Settings', 'one-page'),
-                'description' => __('Allows you to set content.', 'one-page'), //Descriptive tooltip
-                'panel' => 'story_setting_panel',
-                'priority' => '11',
-                'capability' => 'edit_theme_options'
-            )
-        );
 
         /**
          * Latest Post section panel
@@ -391,7 +93,8 @@ class Onepage_Customizer {
          */
         $wp_customize->add_panel('latestpost_setting_panel', array(
                 'title' => __('Latest Post Section', 'one-page'),
-                'description' => __('Allows you to...', 'one-page'), //Descriptive tooltip
+                'description' => __('Allows you to...', 'one-page'),
+                'priority' => '4',
                 'capability' => 'edit_theme_options'
             )
         );
@@ -407,13 +110,111 @@ class Onepage_Customizer {
             )
         );
 
+        $wp_customize->add_section('latestpost_content_setting_section', array(
+                'title' => __('Content Settings', 'one-page'),
+                'description' => __('Allows you to set up Latest Post content.', 'one-page'), //Descriptive tooltip
+                'panel' => 'latestpost_setting_panel',
+                'priority' => '10',
+                'capability' => 'edit_theme_options'
+            )
+        );
+        /**
+         * Our Story section panel
+         * @return array
+         */
+        $wp_customize->add_panel('story_setting_panel', array(
+                'title' => __('Our Story Section', 'one-page'),
+                'description' => __('Allows you to...', 'one-page'), //Descriptive tooltip
+                'priority' => '3',
+                'capability' => 'edit_theme_options'
+            )
+        );
+
+        /**
+         * Our Story heading section
+         */
+        $wp_customize->add_section('story_heading_setting_section', array(
+                'title' => __('Heading Settings', 'one-page'),
+                'description' => __('Allows you to set up Header text for Our Story Section.', 'one-page'), //Descriptive tooltip
+                'panel' => 'story_setting_panel',
+                'priority' => '3',
+                'capability' => 'edit_theme_options'
+            )
+        );
+
+        $wp_customize->add_section('story_setting_section', array(
+                'title' => __('Content Settings', 'one-page'),
+                'description' => __('Allows you to set content.', 'one-page'), //Descriptive tooltip
+                'panel' => 'story_setting_panel',
+                'priority' => '11',
+                'capability' => 'edit_theme_options'
+            )
+        );
+
+        /**
+         * Team section panel
+         * @return array
+         */
+        $wp_customize->add_panel('our_team_setting_panel', array(
+                'title' => __('Our Team Section', 'one-page'),
+                'description' => __('Allows you to setup team section', 'one-page'), //Descriptive tooltip
+                'priority' => '4',
+                'capability' => 'edit_theme_options'
+            )
+        );
+
+        /**
+         * Our Story heading section
+         */
+        $wp_customize->add_section('team_left_content_setting_section', array(
+                'title' => __('Team title and content', 'one-page'),
+                'description' => __('Allows you to set up Header and text for Team Section.', 'one-page'), //Descriptive tooltip
+                'panel' => 'our_team_setting_panel',
+                'priority' => '1',
+                'capability' => 'edit_theme_options'
+            )
+        );
+
+        $wp_customize->add_section('team_member1_setting_section', array(
+                'title' => __('Team Member #1', 'one-page'),
+                'description' => __('Allows you to set content.', 'one-page'), //Descriptive tooltip
+                'panel' => 'our_team_setting_panel',
+                'priority' => '2',
+                'capability' => 'edit_theme_options'
+            )
+        );
+        $wp_customize->add_section('team_member2_setting_section', array(
+                'title' => __('Team Member #2', 'one-page'),
+                'description' => __('Allows you to set content.', 'one-page'), //Descriptive tooltip
+                'panel' => 'our_team_setting_panel',
+                'priority' => '3',
+                'capability' => 'edit_theme_options'
+            )
+        );
+        $wp_customize->add_section('team_member3_setting_section', array(
+                'title' => __('Team Member #3', 'one-page'),
+                'description' => __('Allows you to set content.', 'one-page'), //Descriptive tooltip
+                'panel' => 'our_team_setting_panel',
+                'priority' => '4',
+                'capability' => 'edit_theme_options'
+            )
+        );
+        $wp_customize->add_section('team_member4_setting_section', array(
+                'title' => __('Team Member #4', 'one-page'),
+                'description' => __('Allows you to set content.', 'one-page'), //Descriptive tooltip
+                'panel' => 'our_team_setting_panel',
+                'priority' => '5',
+                'capability' => 'edit_theme_options'
+            )
+        );
+
         /**
          * Testimonials section panel
          */
         $wp_customize->add_panel('testimonial_setting_panel', array(
                 'title' => __('Testimonials Section', 'one-page'),
                 'description' => __('Allows you to set up Testimonials Section for OnePage Theme.', 'one-page'), //Descriptive tooltip
-//            'priority' => '11',
+                'priority' => '4',
                 'capability' => 'edit_theme_options'
             )
         );
@@ -678,6 +479,186 @@ class Onepage_Customizer {
             )
         );
         /**
+         * Slider Section Panel and sub-sections
+         */
+        $wp_customize->add_panel('slider_setting_panel', array(
+                'title' => __('Slider Section', 'one-page'),
+                'description' => __('Allows you to set up Slider section for OnePage Theme.', 'one-page'), //Descriptive tooltip
+//            'priority' => '10',
+                'capability' => 'edit_theme_options'
+            )
+        );
+        /**
+         * Slider setting section
+         */
+        $wp_customize->add_section('slider_setting_section', array(
+                'title' => __('Settings', 'one-page'),
+                'description' => __('Allows you to change slider settings for OnePage Theme.', 'one-page'), //Descriptive tooltip
+                'panel' => 'slider_setting_panel',
+                'priority' => '10',
+                'capability' => 'edit_theme_options'
+            )
+        );
+        /**
+         * Slider #1 section
+         */
+        $wp_customize->add_section('slider_one_setting_section', array(
+                'title' => __('Slider #1', 'one-page'),
+                'description' => __('Allows you to set up slider one for OnePage Theme.', 'one-page'), //Descriptive tooltip
+                'panel' => 'slider_setting_panel',
+                'priority' => '11',
+                'capability' => 'edit_theme_options'
+            )
+        );
+        /**
+         * Slider #2 section
+         */
+        $wp_customize->add_section('slider_two_setting_section', array(
+                'title' => __('Slider #2', 'one-page'),
+                'description' => __('Allows you to set up slider two for OnePage Theme.', 'one-page'), //Descriptive tooltip
+                'panel' => 'slider_setting_panel',
+                'priority' => '12',
+                'capability' => 'edit_theme_options'
+            )
+        );
+        /**
+         * Slider #3 section
+         */
+        $wp_customize->add_section('slider_three_setting_section', array(
+                'title' => __('Slider #3', 'one-page'),
+                'description' => __('Allows you to set up slider three for OnePage Theme.', 'one-page'), //Descriptive tooltip
+                'panel' => 'slider_setting_panel',
+                'priority' => '13',
+                'capability' => 'edit_theme_options'
+            )
+        );
+        /**
+         * Slider #4 section
+         */
+        $wp_customize->add_section('slider_four_setting_section', array(
+                'title' => __('Slider #4', 'one-page'),
+                'description' => __('Allows you to set up slider four for OnePage Theme.', 'one-page'), //Descriptive tooltip
+                'panel' => 'slider_setting_panel',
+                'priority' => '14',
+                'capability' => 'edit_theme_options'
+            )
+        );
+        /**
+         * Slider #5 section
+         */
+        $wp_customize->add_section('slider_five_setting_section', array(
+                'title' => __('Slider #5', 'one-page'),
+                'description' => __('Allows you to set up slider five for OnePage Theme.', 'one-page'), //Descriptive tooltip
+                'panel' => 'slider_setting_panel',
+                'priority' => '15',
+                'capability' => 'edit_theme_options'
+            )
+        );
+        /**
+         * Slider transition section
+         */
+        $wp_customize->add_section('slider_transition_setting_section', array(
+                'title' => __('Slider Transition Effects', 'one-page'),
+                'description' => __('Allows you to set up slider transition effects for OnePage Theme.', 'one-page'), //Descriptive tooltip
+                'panel' => 'slider_setting_panel',
+                'priority' => '16',
+                'capability' => 'edit_theme_options'
+            )
+        );
+        /**
+         * Slider transition section
+         */
+        $wp_customize->add_section('slider_overlay_setting_section', array(
+                'title' => __('Slider Overlay Color Settings', 'one-page'),
+                'description' => __('Allows you to set up slider Overlay colors for OnePage Theme.', 'one-page'), //Descriptive tooltip
+                'panel' => 'slider_setting_panel',
+                'priority' => '17',
+                'capability' => 'edit_theme_options'
+            )
+        );
+
+        /**
+         * Service section panel
+         */
+        $wp_customize->add_panel('service_setting_panel', array(
+                'title' => __('Services Section', 'one-page'),
+                'description' => __('Allows you to set up services section for OnePage Theme.', 'one-page'), //Descriptive tooltip
+//            'priority' => '11',
+                'capability' => 'edit_theme_options'
+            )
+        );
+
+        /**
+         * Service boxes headings section
+         */
+        $wp_customize->add_section('service_heading_setting_section', array(
+                'title' => __('Heading Settings', 'one-page'),
+                'description' => __('Allows you to set up service section headings for OnePage Theme.', 'one-page'), //Descriptive tooltip
+                'panel' => 'service_setting_panel',
+                'priority' => '10',
+                'capability' => 'edit_theme_options'
+            )
+        );
+
+
+
+        /**
+         * Service Box #1 section
+         */
+        $wp_customize->add_section('service_box_one_setting_section', array(
+                'title' => __('Box #1', 'one-page'),
+                'description' => __('Allows you to set up service box #1 for OnePage Theme.', 'one-page'), //Descriptive tooltip
+                'panel' => 'service_setting_panel',
+                'priority' => '11',
+                'capability' => 'edit_theme_options'
+            )
+        );
+        /**
+         * Service Box #2 section
+         */
+        $wp_customize->add_section('service_box_two_setting_section', array(
+                'title' => __('Box #2', 'one-page'),
+                'description' => __('Allows you to set up service box #2 for OnePage Theme.', 'one-page'), //Descriptive tooltip
+                'panel' => 'service_setting_panel',
+                'priority' => '12',
+                'capability' => 'edit_theme_options'
+            )
+        );
+        /**
+         * Service Box #3 section
+         */
+        $wp_customize->add_section('service_box_three_setting_section', array(
+                'title' => __('Box #3', 'one-page'),
+                'description' => __('Allows you to set up service box #3 for OnePage Theme.', 'one-page'), //Descriptive tooltip
+                'panel' => 'service_setting_panel',
+                'priority' => '13',
+                'capability' => 'edit_theme_options'
+            )
+        );
+        /**
+         * Service Box #4 section
+         */
+        $wp_customize->add_section('service_box_four_setting_section', array(
+                'title' => __('Box #4', 'one-page'),
+                'description' => __('Allows you to set up service box #4 for OnePage Theme.', 'one-page'), //Descriptive tooltip
+                'panel' => 'service_setting_panel',
+                'priority' => '14',
+                'capability' => 'edit_theme_options'
+            )
+        );
+        /**
+         * Service boxes color section
+         */
+        $wp_customize->add_section('service_color_setting_section', array(
+                'title' => __('Color Settings', 'one-page'),
+                'description' => __('Allows you to set up service boxes color for OnePage Theme.', 'one-page'), //Descriptive tooltip
+                'panel' => 'service_setting_panel',
+                'priority' => '15',
+                'capability' => 'edit_theme_options'
+            )
+        );
+
+        /**
          * Footer section panel
          * @return array
          */
@@ -909,6 +890,36 @@ class Onepage_Customizer {
             ),
             'latestpost_heading_setting_section' => [
                 'onepage_latestpost_heading'
+            ],
+            'latestpost_content_setting_section' => [
+                'onepage_latestpost_date',
+                'onepage_latestpost_content',
+                'onepage_latestpost_link',
+                'onepage_latestpost_image'
+            ],
+            'team_left_content_setting_section' => [
+                'onepage_team_title',
+                'onepage_team_content'
+            ],
+            'team_member1_setting_section' => [
+                'onepage_team1_image',
+                'onepage_team1_name',
+                'onepage_team1_job'
+            ],
+            'team_member2_setting_section' => [
+                'onepage_team2_image',
+                'onepage_team2_name',
+                'onepage_team2_job'
+            ],
+            'team_member3_setting_section' => [
+                'onepage_team3_image',
+                'onepage_team3_name',
+                'onepage_team3_job'
+            ],
+            'team_member4_setting_section' => [
+                'onepage_team4_image',
+                'onepage_team4_name',
+                'onepage_team4_job'
             ],
             'story_setting_section' => array(
                 'onepage_story_iframe',
@@ -2059,18 +2070,169 @@ You can refer the codes from links below. %s', 'one-page') . '<br>' . esc_attr('
                 'setting_type' => 'text',
                 'default' => ''
             ),
+            'onepage_latestpost_image' => array(
+                'id' => 'onepage_options[onepage_latestpost_image]',
+                'label' => __('Image', 'one-page'),
+                'description' => __('Upload image for Latest Post section', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'image',
+                'default' => ''
+            ),
+            'onepage_latestpost_date' => [
+                'id' => 'onepage_options[onepage_latestpost_date]',
+                'label' => __('Set Date', 'one-page'),
+                'description' => __('Write main heading for the Latest Post section', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ],
+            'onepage_latestpost_content' => [
+                'id' => 'onepage_options[onepage_latestpost_content]',
+                'label' => __('Main Content', 'one-page'),
+                'description' => __('Write main heading for the Latest Post section', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'editor',
+                'default' => ''
+            ],
+            'onepage_latestpost_link' => [
+                'id' => 'onepage_options[onepage_latestpost_link]',
+                'label' => __('Find More Link', 'one-page'),
+                'description' => __('Write main heading for the Latest Post section', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'link',
+                'default' => '#'
+            ],
+            'onepage_team_title' => [
+                'id' => 'onepage_options[onepage_team_title]',
+                'label' => __('Set Date', 'one-page'),
+                'description' => __('Write main heading for the Latest Post section', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ],
+            'onepage_team_content' => [
+                'id' => 'onepage_options[onepage_team_content]',
+                'label' => __('Set Team Content', 'one-page'),
+                'description' => __('Write main heading for the Latest Post section', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'editor',
+                'default' => ''
+            ],
+
+
+            'onepage_team1_name' => [
+                'id' => 'onepage_options[onepage_team1_name]',
+                'label' => __('Team Member Name', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ],
+            'onepage_team1_job' => [
+                'id' => 'onepage_options[onepage_team1_job]',
+                'label' => __('Team Member Job', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ],
+            'onepage_team1_image' => [
+                'id' => 'onepage_options[onepage_team1_image]',
+                'label' => __('Team Member Image', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'image',
+                'default' => ''
+            ],
+
+            'onepage_team2_name' => [
+                'id' => 'onepage_options[onepage_team2_name]',
+                'label' => __('Team Member Name', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ],
+            'onepage_team2_job' => [
+                'id' => 'onepage_options[onepage_team2_job]',
+                'label' => __('Team Member Job', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ],
+            'onepage_team2_image' => [
+                'id' => 'onepage_options[onepage_team2_image]',
+                'label' => __('Team Member Image', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'image',
+                'default' => ''
+            ],
+
+            'onepage_team3_name' => [
+                'id' => 'onepage_options[onepage_team3_name]',
+                'label' => __('Team Member Name', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ],
+            'onepage_team3_job' => [
+                'id' => 'onepage_options[onepage_team3_job]',
+                'label' => __('Team Member Job', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ],
+            'onepage_team3_image' => [
+                'id' => 'onepage_options[onepage_team3_image]',
+                'label' => __('Team Member Image', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'image',
+                'default' => ''
+            ],
+
+            'onepage_team4_name' => [
+                'id' => 'onepage_options[onepage_team4_name]',
+                'label' => __('Team Member Name', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ],
+            'onepage_team4_job' => [
+                'id' => 'onepage_options[onepage_team4_job]',
+                'label' => __('Team Member Job', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ],
+            'onepage_team4_image' => [
+                'id' => 'onepage_options[onepage_team4_image]',
+                'label' => __('Team Member Image', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'image',
+                'default' => ''
+            ],
+
+
             'onepage_story_iframe' => array(
                 'id' => 'onepage_options[onepage_story_iframe]',
                 'label' => __('Main Content', 'one-page'),
-                'description' => __('Paste video iframe code for the video section', 'one-page'),
+                'description' => __('Paste main content text which will be splitted in 2 columns', 'one-page'),
                 'type' => 'option',
                 'setting_type' => 'editor',
                 'default' => ''
             ),
             'onepage_story_subtext' => array(
                 'id' => 'onepage_options[onepage_story_subtext]',
-                'label' => __('Sub Content', 'one-page'),
-                'description' => __('Paste video iframe code for the video section', 'one-page'),
+                'label' => __('Content Sufix section', 'one-page'),
+                'description' => __('Paste statistic data which are displayed at the end', 'one-page'),
                 'type' => 'option',
                 'setting_type' => 'editor',
                 'default' => ''
