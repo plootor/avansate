@@ -492,10 +492,14 @@ header {
   right: 0;
 }
 #blog .blog-image-cell .blog-image {
-  background: url("../img/bouquet-of-flowers-1149099_1920.jpg") no-repeat center center;
+  background-image: url("../img/bouquet-of-flowers-1149099_1920.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   height: 100%;
   width: 100%;
+
+
 }
 /* ------END LATEST PROJECT----------- */
 /* ------6. START OUR STORY----------- */
@@ -617,7 +621,9 @@ header {
 #services .service-image-container .service-image1 {
   height: 53%;
   width: 77%;
-  background: url("../img/beautiful-1835116_1920.jpg") no-repeat center center;
+  background-image: url("../img/beautiful-1835116_1920.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   position: absolute;
   top: 3%;
@@ -629,7 +635,9 @@ header {
 #services .service-image-container .service-image2 {
   height: 53%;
   width: 77%;
-  background: url("../img/flowers-2044789_1920.jpg") no-repeat center center;
+  background-image: url("../img/flowers-2044789_1920.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   position: absolute;
   top: 40%;

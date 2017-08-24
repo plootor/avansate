@@ -22,22 +22,26 @@
       <div class="col-sm-12 col-md-7 col-md-offset-1 team-image-cell">
         <div>
           <div class="col-xs-6">
-            <div class="team-cell" style="background-image: url(<?php echo onepage_get_option('onepage_team1_image', ''); ?>)"></div>
+            <div class="team-cell team-cell1" <?php echo onepage_get_option('onepage_team1_image') ?
+                'style="background-image: url(' . onepage_get_option('onepage_team1_image', '') . ')"' : 'false'; ?>></div>
             <h5><?php echo onepage_get_option('onepage_team1_name', 'Jane Doe'); ?></h5>
             <h6><?php echo onepage_get_option('onepage_team1_job', 'Decorator'); ?></h6>
           </div>
           <div class="col-xs-6">
-            <div class="team-cell" style="background-image: url(<?php echo onepage_get_option('onepage_team2_image', ''); ?>)"></div>
+              <div class="team-cell team-cell2" <?php echo onepage_get_option('onepage_team2_image') ?
+                  'style="background-image: url(' . onepage_get_option('onepage_team2_image', '') . ')"' : 'false'; ?>></div>
             <h5><?php echo onepage_get_option('onepage_team2_name', 'Elena Sotta'); ?></h5>
             <h6><?php echo onepage_get_option('onepage_team2_job', 'Floral designer'); ?></h6>
           </div>
           <div class="col-xs-6">
-            <div class="team-cell" style="background-image: url(<?php echo onepage_get_option('onepage_team3_image', ''); ?>)"></div>
+              <div class="team-cell team-cell3" <?php echo onepage_get_option('onepage_team3_image') ?
+                  'style="background-image: url(' . onepage_get_option('onepage_team3_image', '') . ')"' : 'false'; ?>></div>
             <h5><?php echo onepage_get_option('onepage_team3_name', 'Veronica Pierce'); ?></h5>
             <h6><?php echo onepage_get_option('onepage_team3_job', 'Florist'); ?></h6>
           </div>
           <div class="col-xs-6">
-            <div class="team-cell" style="background-image: url(<?php echo onepage_get_option('onepage_team4_image', ''); ?>)"></div>
+              <div class="team-cell team-cell4" <?php echo onepage_get_option('onepage_team4_image') ?
+                  'style="background-image: url(' . onepage_get_option('onepage_team4_image', '') . ')"' : 'false'; ?>></div>
             <h5><?php echo onepage_get_option('onepage_team4_name', 'John Doe'); ?></h5>
             <h6><?php echo onepage_get_option('onepage_team4_job', 'Marketing specialist'); ?></h6>
           </div>

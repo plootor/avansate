@@ -7,8 +7,8 @@
     </div>
     <div class="row pos-r">
       <div class="col-sm-12 col-md-6 blog-image-cell">
-        <div style="background: url('<?php echo onepage_get_option('onepage_latestpost_image', ''); ?>') no-repeat center center;
-                background-size: cover;height: 100%;width: 100%;"></div>
+        <div class="blog-image" <?php echo onepage_get_option('onepage_latestpost_image') ?
+            'style="background-image: url(' . onepage_get_option('onepage_latestpost_image', '') . ')"' : 'false'; ?>></div>
       </div>
       <div class="col-sm-12 col-md-6">
         <div>

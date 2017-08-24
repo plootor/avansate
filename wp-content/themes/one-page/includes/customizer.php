@@ -156,7 +156,7 @@ class Onepage_Customizer {
          * @return array
          */
         $wp_customize->add_panel('our_team_setting_panel', array(
-                'title' => __('Our Team Section', 'one-page'),
+                'title' => __('Team Section', 'one-page'),
                 'description' => __('Allows you to setup team section', 'one-page'), //Descriptive tooltip
                 'priority' => '4',
                 'capability' => 'edit_theme_options'
@@ -208,25 +208,159 @@ class Onepage_Customizer {
             )
         );
 
+
+
         /**
-         * Testimonials section panel
+         * Quote section panel
+         * @return array
          */
-        $wp_customize->add_panel('testimonial_setting_panel', array(
-                'title' => __('Testimonials Section', 'one-page'),
-                'description' => __('Allows you to set up Testimonials Section for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'priority' => '4',
+        $wp_customize->add_panel('quote_setting_panel', array(
+                'title' => __('Quote Section', 'one-page'),
+                'description' => __('Allows you to setup quote text', 'one-page'), //Descriptive tooltip
+                'priority' => '5',
                 'capability' => 'edit_theme_options'
             )
         );
 
         /**
-         * Testimonials color section
+         * Our Story heading section
          */
-        $wp_customize->add_section('testimonial_color_setting_section', array(
-                'title' => __('Color Settings', 'one-page'),
-                'description' => __('Allows you to set up Testimonials section color for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'testimonial_setting_panel',
-                'priority' => '14',
+        $wp_customize->add_section('quote_setting_section', array(
+                'title' => __('Quote Content', 'one-page'),
+                'description' => __('Allows you to set up quote text', 'one-page'), //Descriptive tooltip
+                'panel' => 'quote_setting_panel',
+                'priority' => '1',
+                'capability' => 'edit_theme_options'
+            )
+        );
+
+
+
+        /**
+         * Services section panel
+         * @return array
+         */
+        $wp_customize->add_panel('services_setting_panel', array(
+                'title' => __('Service Section', 'one-page'),
+                'description' => __('Allows you to setup quote text', 'one-page'), //Descriptive tooltip
+                'priority' => '6',
+                'capability' => 'edit_theme_options'
+            )
+        );
+
+        /**
+         * Services Images section
+         */
+        $wp_customize->add_section('services_images_setting_section', array(
+                'title' => __('Service Images', 'one-page'),
+                'description' => __('Allows you to set up images', 'one-page'), //Descriptive tooltip
+                'panel' => 'services_setting_panel',
+                'priority' => '1',
+                'capability' => 'edit_theme_options'
+            )
+        );
+
+        /**
+         * Services Element section
+         */
+        $wp_customize->add_section('services_element1_setting_section', array(
+                'title' => __('Service #1 Element', 'one-page'),
+                'description' => __('Allows you to set up element settings', 'one-page'), //Descriptive tooltip
+                'panel' => 'services_setting_panel',
+                'priority' => '1',
+                'capability' => 'edit_theme_options'
+            )
+        );
+
+        /**
+         * Services Element section
+         */
+        $wp_customize->add_section('services_element2_setting_section', array(
+                'title' => __('Service #2 Element', 'one-page'),
+                'description' => __('Allows you to set up element settings', 'one-page'), //Descriptive tooltip
+                'panel' => 'services_setting_panel',
+                'priority' => '1',
+                'capability' => 'edit_theme_options'
+            )
+        );
+
+        /**
+         * Services Element section
+         */
+        $wp_customize->add_section('services_element3_setting_section', array(
+                'title' => __('Service #3 Element', 'one-page'),
+                'description' => __('Allows you to set up element settings', 'one-page'), //Descriptive tooltip
+                'panel' => 'services_setting_panel',
+                'priority' => '1',
+                'capability' => 'edit_theme_options'
+            )
+        );
+
+        /**
+         * Services Element section
+         */
+        $wp_customize->add_section('services_element4_setting_section', array(
+                'title' => __('Service #4 Element', 'one-page'),
+                'description' => __('Allows you to set up element settings', 'one-page'), //Descriptive tooltip
+                'panel' => 'services_setting_panel',
+                'priority' => '1',
+                'capability' => 'edit_theme_options'
+            )
+        );
+
+        /**
+         * Subscribe section panel
+         * @return array
+         */
+        $wp_customize->add_panel('subscribe_setting_panel', array(
+                'title' => __('Subscribe Section', 'one-page'),
+                'description' => __('Allows you to set up subscribe section header', 'one-page'), //Descriptive tooltip
+                'priority' => '7',
+                'capability' => 'edit_theme_options'
+            )
+        );
+        /**
+         * Subscribe section
+         */
+        $wp_customize->add_section('subscribe_setting_section', array(
+                'title' => __('Subscribe Header', 'one-page'),
+                'description' => __('set Subscribe Header', 'one-page'), //Descriptive tooltip
+                'panel' => 'subscribe_setting_panel',
+                'priority' => '1',
+                'capability' => 'edit_theme_options'
+            )
+        );
+
+        /**
+         * Partners section panel
+         * @return array
+         */
+        $wp_customize->add_panel('partners_setting_panel', array(
+                'title' => __('Partners Section', 'one-page'),
+                'description' => __('Allows you to set up partner section elements', 'one-page'), //Descriptive tooltip
+                'priority' => '9',
+                'capability' => 'edit_theme_options'
+            )
+        );
+        /**
+         * Partners section
+         */
+        $wp_customize->add_section('partners_setting_section', array(
+                'title' => __('Partners Settings', 'one-page'),
+                'description' => __('set partner section', 'one-page'), //Descriptive tooltip
+                'panel' => 'partners_setting_panel',
+                'priority' => '1',
+                'capability' => 'edit_theme_options'
+            )
+        );
+
+        /**
+         * Testimonials section panel
+         */
+        $wp_customize->add_panel('testimonial_setting_panel', array(
+                'title' => __('Testimonials Section', 'one-page'),
+                'description' => __('Allows you to set up Testimonials Section.', 'one-page'), //Descriptive tooltip
+                'priority' => '8',
                 'capability' => 'edit_theme_options'
             )
         );
@@ -236,7 +370,7 @@ class Onepage_Customizer {
          */
         $wp_customize->add_section('testimonial_heading_setting_section', array(
                 'title' => __('Heading Settings', 'one-page'),
-                'description' => __('Allows you to set up Testimonials section headings for OnePage Theme.', 'one-page'), //Descriptive tooltip
+                'description' => __('Allows you to set up Testimonials section headings.', 'one-page'), //Descriptive tooltip
                 'panel' => 'testimonial_setting_panel',
                 'priority' => '10',
                 'capability' => 'edit_theme_options'
@@ -921,6 +1055,57 @@ class Onepage_Customizer {
                 'onepage_team4_name',
                 'onepage_team4_job'
             ],
+
+            'quote_setting_section' => [
+                'onepage_quote_header',
+                'onepage_quote_content',
+                'onepage_quote_footer',
+                'onepage_quote_bg_image'
+            ],
+
+            'services_images_setting_section' => [
+                'onepage_service_image1',
+                'onepage_service_image2'
+            ],
+
+            'services_element1_setting_section' => [
+                'service_element1_header',
+                'service_element1_content',
+                'service_element1_image',
+            ],
+
+            'services_element2_setting_section' => [
+                'service_element2_header',
+                'service_element2_content',
+                'service_element2_image',
+            ],
+
+            'services_element3_setting_section' => [
+                'service_element3_header',
+                'service_element3_content',
+                'service_element3_image',
+            ],
+
+            'services_element4_setting_section' => [
+                'service_element4_header',
+                'service_element4_content',
+                'service_element4_image',
+            ],
+
+            'subscribe_setting_section' => [
+                'subscribe_header',
+            ],
+
+            'partners_setting_section' => [
+                'partners_header',
+                'partners_image1',
+                'partners_image2',
+                'partners_image3',
+                'partners_image4',
+                'partners_image5',
+                'partners_image6',
+            ],
+
             'story_setting_section' => array(
                 'onepage_story_iframe',
                 'onepage_story_subtext'
@@ -935,23 +1120,31 @@ class Onepage_Customizer {
                 'onepage_testimonial_section_content_border_color'
             ),
             'testimonial_heading_setting_section' => array(
-                'onepage_testimonial_main_heading',
-                'onepage_testimonial_sub_heading'
+                'onepage_testimonial_main_heading'
             ),
             'testimonial_box1_setting_section' => array(
-                'onepage_testimonial_1_image',
-                'onepage_testimonial_1_content',
-                'onepage_testimonial_1_name'
+                'onepage_testimonial_1_cel1_name',
+                'onepage_testimonial_1_cel1_job',
+                'onepage_testimonial_1_cel1_content',
+                'onepage_testimonial_1_cel2_name',
+                'onepage_testimonial_1_cel2_job',
+                'onepage_testimonial_1_cel2_content'
             ),
             'testimonial_box2_setting_section' => array(
-                'onepage_testimonial_2_image',
-                'onepage_testimonial_2_content',
-                'onepage_testimonial_2_name'
+                'onepage_testimonial_2_cel1_name',
+                'onepage_testimonial_2_cel1_job',
+                'onepage_testimonial_2_cel1_content',
+                'onepage_testimonial_2_cel2_name',
+                'onepage_testimonial_2_cel2_job',
+                'onepage_testimonial_2_cel2_content'
             ),
             'testimonial_box3_setting_section' => array(
-                'onepage_testimonial_3_image',
-                'onepage_testimonial_3_content',
-                'onepage_testimonial_3_name'
+                'onepage_testimonial_3_cel1_name',
+                'onepage_testimonial_3_cel1_job',
+                'onepage_testimonial_3_cel1_content',
+                'onepage_testimonial_3_cel2_name',
+                'onepage_testimonial_3_cel2_job',
+                'onepage_testimonial_3_cel2_content'
             ),
             /**
              * Pricing panel setting
@@ -1762,129 +1955,6 @@ You can refer the codes from links below. %s', 'one-page') . '<br>' . esc_attr('
                 'default' => '#9792d4'
             ),
             /**
-             * Testimonial Section
-             */
-            'onepage_testimonial_section_bg_color' => array(
-                'id' => 'onepage_options[onepage_testimonial_section_bg_color]',
-                'label' => __('Background Color', 'one-page'),
-                'description' => __('Set background color for the section', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'color',
-                'default' => '#fff'
-            ),
-            'onepage_testimonial_section_heading_color' => array(
-                'id' => 'onepage_options[onepage_testimonial_section_heading_color]',
-                'label' => __('Main Heading Color', 'one-page'),
-                'description' => __('Main heading color', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'color',
-                'default' => '#272727'
-            ),
-            'onepage_testimonial_section_sub_heading_color' => array(
-                'id' => 'onepage_options[onepage_testimonial_section_sub_heading_color]',
-                'label' => __('Sub-Heading Color', 'one-page'),
-                'description' => __('Sub-heading color', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'color',
-                'default' => '#6D6C6C'
-            ),
-            'onepage_testimonial_section_content_border_color' => array(
-                'id' => 'onepage_options[onepage_testimonial_section_content_border_color]',
-                'label' => __('Border Color', 'one-page'),
-                'description' => __('Border color', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'alpha_color',
-                'default' => '#bab7e0'
-            ),
-            'onepage_testimonial_main_heading' => array(
-                'id' => 'onepage_options[onepage_testimonial_main_heading]',
-                'label' => __('Main Heading', 'one-page'),
-                'description' => __('Write main heading for the testimonial section', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'text',
-                'default' => ''
-            ),
-            'onepage_testimonial_sub_heading' => array(
-                'id' => 'onepage_options[onepage_testimonial_sub_heading]',
-                'label' => __('Sub-Heading', 'one-page'),
-                'description' => __('Write sub-heading for the testimonial section', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'text',
-                'default' => ''
-            ),
-            'onepage_testimonial_1_image' => array(
-                'id' => 'onepage_options[onepage_testimonial_1_image]',
-                'label' => __('Author Image', 'one-page'),
-                'description' => __('Upload Author Image for first testimonial', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'image',
-                'default' => ''
-            ),
-            'onepage_testimonial_1_content' => array(
-                'id' => 'onepage_options[onepage_testimonial_1_content]',
-                'label' => __('Author Content ', 'one-page'),
-                'description' => __('Write content for first testimonial', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'textarea',
-                'default' => ''
-            ),
-            'onepage_testimonial_1_name' => array(
-                'id' => 'onepage_options[onepage_testimonial_1_name]',
-                'label' => __('Author Name ', 'one-page'),
-                'description' => __('Write Author name for first testimonial', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'text',
-                'default' => ''
-            ),
-            'onepage_testimonial_2_image' => array(
-                'id' => 'onepage_options[onepage_testimonial_2_image]',
-                'label' => __('Author Image', 'one-page'),
-                'description' => __('Upload Author Image for second testimonial', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'image',
-                'default' => ''
-            ),
-            'onepage_testimonial_2_content' => array(
-                'id' => 'onepage_options[onepage_testimonial_2_content]',
-                'label' => __('Author Content ', 'one-page'),
-                'description' => __('Write content for second testimonial', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'textarea',
-                'default' => ''
-            ),
-            'onepage_testimonial_2_name' => array(
-                'id' => 'onepage_options[onepage_testimonial_2_name]',
-                'label' => __('Author Name ', 'one-page'),
-                'description' => __('Write Author name for second testimonial', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'text',
-                'default' => ''
-            ),
-            'onepage_testimonial_3_image' => array(
-                'id' => 'onepage_options[onepage_testimonial_3_image]',
-                'label' => __('Author Image', 'one-page'),
-                'description' => __('Upload Author Image for third testimonial', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'image',
-                'default' => ''
-            ),
-            'onepage_testimonial_3_content' => array(
-                'id' => 'onepage_options[onepage_testimonial_3_content]',
-                'label' => __('Author Content ', 'one-page'),
-                'description' => __('Write content for third testimonial', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'textarea',
-                'default' => ''
-            ),
-            'onepage_testimonial_3_name' => array(
-                'id' => 'onepage_options[onepage_testimonial_3_name]',
-                'label' => __('Author Name ', 'one-page'),
-                'description' => __('Write Author name for third testimonial', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'text',
-                'default' => ''
-            ),
-            /**
              * Blogs & News options
              */
             'onepage_blog_bg_color' => array(
@@ -2219,6 +2289,375 @@ You can refer the codes from links below. %s', 'one-page') . '<br>' . esc_attr('
                 'setting_type' => 'image',
                 'default' => ''
             ],
+
+
+            'onepage_quote_header' => [
+                'id' => 'onepage_options[onepage_quote_header]',
+                'label' => __('Quote Header', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ],
+            'onepage_quote_content' => [
+                'id' => 'onepage_options[onepage_quote_content]',
+                'label' => __('Quote Main Content', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'editor',
+                'default' => ''
+            ],
+            'onepage_quote_footer' => [
+                'id' => 'onepage_options[onepage_quote_footer]',
+                'label' => __('Quote Footer', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ],
+
+            'onepage_quote_bg_image' => [
+                'id' => 'onepage_options[onepage_quote_bg_image]',
+                'label' => __('Quote Background Image', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'image',
+                'default' => ''
+            ],
+
+            'onepage_service_image1' => [
+                'id' => 'onepage_options[onepage_service_image1]',
+                'label' => __('Service First Image', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'image',
+                'default' => ''
+            ],
+
+            'onepage_service_image2' => [
+                'id' => 'onepage_options[onepage_service_image2]',
+                'label' => __('Service Second Image', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'image',
+                'default' => ''
+            ],
+            'service_element1_image' => [
+                'id' => 'onepage_options[service_element1_image]',
+                'label' => __('Service #1 Element Image', 'one-page'),
+                'description' => __('Use font-awesome notation like "fa-gift"', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ],
+            'service_element1_header' => [
+                'id' => 'onepage_options[service_element1_header]',
+                'label' => __('Service #1 Element Header', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ],
+            'service_element1_content' => [
+                'id' => 'onepage_options[service_element1_content]',
+                'label' => __('Service #1 Element Content', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'editor',
+                'default' => ''
+            ],
+            'service_element2_image' => [
+                'id' => 'onepage_options[service_element2_image]',
+                'label' => __('Service #2 Element Image', 'one-page'),
+                'description' => __('Use font-awesome notation like "fa-gift"', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ],
+            'service_element2_header' => [
+                'id' => 'onepage_options[service_element2_header]',
+                'label' => __('Service #2 Element Header', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ],
+            'service_element2_content' => [
+                'id' => 'onepage_options[service_element2_content]',
+                'label' => __('Service #2 Element Content', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'editor',
+                'default' => ''
+            ],
+            'service_element3_image' => [
+                'id' => 'onepage_options[service_element3_image]',
+                'label' => __('Service #3 Element Image', 'one-page'),
+                'description' => __('Use font-awesome notation like "fa-gift"', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ],
+            'service_element3_header' => [
+                'id' => 'onepage_options[service_element3_header]',
+                'label' => __('Service #3 Element Header', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ],
+            'service_element3_content' => [
+                'id' => 'onepage_options[service_element3_content]',
+                'label' => __('Service #3 Element Content', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'editor',
+                'default' => ''
+            ],
+            'service_element4_image' => [
+                'id' => 'onepage_options[service_element4_image]',
+                'label' => __('Service #4 Element Image', 'one-page'),
+                'description' => __('Use font-awesome notation like "fa-gift"', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ],
+            'service_element4_header' => [
+                'id' => 'onepage_options[service_element4_header]',
+                'label' => __('Service #4 Element Header', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ],
+            'service_element4_content' => [
+                'id' => 'onepage_options[service_element4_content]',
+                'label' => __('Service #4 Element Content', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'editor',
+                'default' => ''
+            ],
+            'subscribe_header' => [
+                'id' => 'onepage_options[subscribe_header]',
+                'label' => __('Subscribe Section Header', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ],
+            'partners_header' => [
+                'id' => 'onepage_options[partners_header]',
+                'label' => __('Partners Section Header', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ],
+            'partners_image1' => [
+                'id' => 'onepage_options[partners_image1]',
+                'label' => __('Partners Image #1', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'image',
+                'default' => ''
+            ],
+            'partners_image2' => [
+                'id' => 'onepage_options[partners_image2]',
+                'label' => __('Partners Image #2', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'image',
+                'default' => ''
+            ],
+            'partners_image3' => [
+                'id' => 'onepage_options[partners_image3]',
+                'label' => __('Partners Image #3', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'image',
+                'default' => ''
+            ],
+            'partners_image4' => [
+                'id' => 'onepage_options[partners_image4]',
+                'label' => __('Partners Image #4', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'image',
+                'default' => ''
+            ],
+            'partners_image5' => [
+                'id' => 'onepage_options[partners_image5]',
+                'label' => __('Partners Image #5', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'image',
+                'default' => ''
+            ],
+            'partners_image6' => [
+                'id' => 'onepage_options[partners_image6]',
+                'label' => __('Partners Image #6', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'image',
+                'default' => ''
+            ],
+            'onepage_testimonial_main_heading' => array(
+                'id' => 'onepage_options[onepage_testimonial_main_heading]',
+                'label' => __('Main Heading', 'one-page'),
+                'description' => __('Write main heading for the testimonial section', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ),
+            'onepage_testimonial_1_cel2_name' => array(
+                'id' => 'onepage_options[onepage_testimonial_1_cel2_name]',
+                'label' => __('Cell #2 Right Section Name', 'one-page'),
+                'description' => __('Upload Author Image for first testimonial', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ),
+            'onepage_testimonial_1_cel1_name' => array(
+                'id' => 'onepage_options[onepage_testimonial_1_cel1_name]',
+                'label' => __('Cell #1 Left Section Name', 'one-page'),
+                'description' => __('Upload Author Image for first testimonial', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ),
+            'onepage_testimonial_1_cel1_job' => array(
+                'id' => 'onepage_options[onepage_testimonial_1_cel1_job]',
+                'label' => __('Cell #1 Left Section Job', 'one-page'),
+                'description' => __('Upload Author Image for first testimonial', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ),
+            'onepage_testimonial_1_cel2_job' => array(
+                'id' => 'onepage_options[onepage_testimonial_1_cel2_job]',
+                'label' => __('Cell #2 Right Section Job', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ),
+            'onepage_testimonial_1_cel1_content' => array(
+                'id' => 'onepage_options[onepage_testimonial_1_cel1_content]',
+                'label' => __('Cell #1 Left Section Content', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'editor',
+                'default' => ''
+            ),
+            'onepage_testimonial_1_cel2_content' => array(
+                'id' => 'onepage_options[onepage_testimonial_1_cel2_content]',
+                'label' => __('Cell #1 Right Section Content', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'editor',
+                'default' => ''
+            ),
+
+            'onepage_testimonial_2_cel2_name' => array(
+                'id' => 'onepage_options[onepage_testimonial_2_cel2_name]',
+                'label' => __('Cell #2 Right Section Name', 'one-page'),
+                'description' => __('Upload Author Image for first testimonial', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ),
+            'onepage_testimonial_2_cel1_name' => array(
+                'id' => 'onepage_options[onepage_testimonial_2_cel1_name]',
+                'label' => __('Cell #2 Left Section Name', 'one-page'),
+                'description' => __('Upload Author Image for first testimonial', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ),
+            'onepage_testimonial_2_cel1_job' => array(
+                'id' => 'onepage_options[onepage_testimonial_2_cel1_job]',
+                'label' => __('Cell #2 Left Section Job', 'one-page'),
+                'description' => __('Upload Author Image for first testimonial', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ),
+            'onepage_testimonial_2_cel2_job' => array(
+                'id' => 'onepage_options[onepage_testimonial_2_cel2_job]',
+                'label' => __('Cell #2 Right Section Job', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ),
+            'onepage_testimonial_2_cel1_content' => array(
+                'id' => 'onepage_options[onepage_testimonial_2_cel1_content]',
+                'label' => __('Cell #2 Left Section Content', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'editor',
+                'default' => ''
+            ),
+            'onepage_testimonial_2_cel2_content' => array(
+                'id' => 'onepage_options[onepage_testimonial_2_cel2_content]',
+                'label' => __('Cell #2 Right Section Content', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'editor',
+                'default' => ''
+            ),
+
+            'onepage_testimonial_3_cel2_name' => array(
+                'id' => 'onepage_options[onepage_testimonial_3_cel2_name]',
+                'label' => __('Cell #3 Right Section Name', 'one-page'),
+                'description' => __('Upload Author Image for first testimonial', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ),
+            'onepage_testimonial_3_cel1_name' => array(
+                'id' => 'onepage_options[onepage_testimonial_3_cel1_name]',
+                'label' => __('Cell #3 Left Section Name', 'one-page'),
+                'description' => __('Upload Author Image for first testimonial', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ),
+            'onepage_testimonial_3_cel1_job' => array(
+                'id' => 'onepage_options[onepage_testimonial_3_cel1_job]',
+                'label' => __('Cell #3 Left Section Job', 'one-page'),
+                'description' => __('Upload Author Image for first testimonial', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ),
+            'onepage_testimonial_3_cel2_job' => array(
+                'id' => 'onepage_options[onepage_testimonial_3_cel2_job]',
+                'label' => __('Cell #3 Right Section Job', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ),
+            'onepage_testimonial_3_cel1_content' => array(
+                'id' => 'onepage_options[onepage_testimonial_3_cel1_content]',
+                'label' => __('Cell #3 Left Section Content', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'editor',
+                'default' => ''
+            ),
+            'onepage_testimonial_3_cel2_content' => array(
+                'id' => 'onepage_options[onepage_testimonial_3_cel2_content]',
+                'label' => __('Cell #3 Right Section Content', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'editor',
+                'default' => ''
+            ),
+
+
 
 
             'onepage_story_iframe' => array(

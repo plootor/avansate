@@ -3,7 +3,7 @@
   <div class="container text-center">
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-        <h1 class="subscribe-heading section-heading fade-animate">newsletter</h1>
+        <h1 class="subscribe-heading section-heading fade-animate"><?php echo onepage_get_option('subscribe_header', 'newsletter'); ?></h1>
         <!-- MailChimp Signup Form -->
         <div id="mc_embed_signup">
           <form action="#" method="post" id="subscribe-form" target="_blank" novalidate>
