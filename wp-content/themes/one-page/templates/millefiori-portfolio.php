@@ -1,14 +1,14 @@
 <!--Portfolio Section-->
-<section id="portfolio" class="visible-over fade-animate">
+<section id="portfolio" class="visible-over">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h4 class="section-name fade-animate">Portfolio<i class="fa fa-minus" aria-hidden="true"></i></h4>
+        <h4 class="section-name">Portfolio<i class="fa fa-minus" aria-hidden="true"></i></h4>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
-        <div class="portfolio-nav fade-animate">
+        <div class="portfolio-nav">
           <a href="#" data-name="all" class="active">all</a>
           <a href="#" data-name="first">first</a>
           <a href="#" data-name="second">second</a>

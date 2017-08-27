@@ -409,6 +409,98 @@ class Onepage_Customizer {
                 'capability' => 'edit_theme_options'
             )
         );
+
+        /**
+         * Testimonials section panel
+         */
+        $wp_customize->add_panel('contactpage_setting_panel', array(
+                'title' => __('Contact Section', 'one-page'),
+                'description' => __('Allows you to set up Contact section.', 'one-page'), //Descriptive tooltip
+                'priority' => '9',
+                'capability' => 'edit_theme_options'
+            )
+        );
+
+        /**
+         * Contact Section
+         */
+        $wp_customize->add_section('contact_setting_section', array(
+                'title' => __('Contact Settings', 'one-page'),
+                'description' => __('Allows you to set up Contact heading and background image', 'one-page'), //Descriptive tooltip
+                'panel' => 'contactpage_setting_panel',
+                'priority' => '1',
+                'capability' => 'edit_theme_options'
+            )
+        );
+
+        /**
+         * Footer section panel
+         */
+        $wp_customize->add_panel('page_footer_setting_panel', array(
+                'title' => __('Footer Section', 'one-page'),
+                'description' => __('Allows you to set up Footer elements.', 'one-page'), //Descriptive tooltip
+                'priority' => '10',
+                'capability' => 'edit_theme_options'
+            )
+        );
+
+        /**
+         * Footer Main Section
+         */
+        $wp_customize->add_section('pagefooter_setting_section', array(
+                'title' => __('Footer Settings', 'one-page'),
+                'description' => __('Allows you to set up Contact heading and background image', 'one-page'), //Descriptive tooltip
+                'panel' => 'page_footer_setting_panel',
+                'priority' => '1',
+                'capability' => 'edit_theme_options'
+            )
+        );
+
+        /**
+         * Footer Social Section
+         */
+        $wp_customize->add_section('pagefooter_social_setting_section', array(
+                'title' => __('Footer Social Media Settings', 'one-page'),
+                'description' => __('Allows you to set up external social media links', 'one-page'), //Descriptive tooltip
+                'panel' => 'page_footer_setting_panel',
+                'priority' => '2',
+                'capability' => 'edit_theme_options'
+            )
+        );
+
+        /**
+         * Footer section panel
+         */
+        $wp_customize->add_panel('page_header_setting_panel', array(
+                'title' => __('Header Section', 'one-page'),
+                'description' => __('Allows you to set up Header elements.', 'one-page'), //Descriptive tooltip
+                'priority' => '1',
+                'capability' => 'edit_theme_options'
+            )
+        );
+        /**
+         * Header Slider Section
+         */
+        $wp_customize->add_section('onepage_main_carousel_setting_section', array(
+                'title' => __('Header Slider Settings', 'one-page'),
+                'description' => __('Allows you to set up slider images', 'one-page'), //Descriptive tooltip
+                'panel' => 'page_header_setting_panel',
+                'priority' => '2',
+                'capability' => 'edit_theme_options'
+            )
+        );
+        $wp_customize->add_section('onepage_header_logo_setting_section', array(
+                'title' => __('Header Logo', 'one-page'),
+                'description' => __('Allows you to set up header logo', 'one-page'), //Descriptive tooltip
+                'panel' => 'page_header_setting_panel',
+                'priority' => '1',
+                'capability' => 'edit_theme_options'
+            )
+        );
+
+
+
+
         /**
          * Pricing section panel
          * @return array
@@ -590,126 +682,6 @@ class Onepage_Customizer {
                 'capability' => 'edit_theme_options'
             )
         );
-        /**
-         * Footer sidebar section panel
-         * @return array
-         */
-        $wp_customize->add_panel('footer_sidebar_setting_panel', array(
-                'title' => __('Footer Sidebar Section', 'one-page'),
-                'description' => __('Allows you to set up footer sidebar section for OnePage Theme.', 'one-page'), //Descriptive tooltip
-//            'priority' => '11',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Footer sidebar color section
-         */
-        $wp_customize->add_section('footer_sidebar_section_color_setting', array(
-                'title' => __('Color Settings', 'one-page'),
-                'description' => __('Allows you to set up footer sidebar section color for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'footer_sidebar_setting_panel',
-                'priority' => '10',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Slider Section Panel and sub-sections
-         */
-        $wp_customize->add_panel('slider_setting_panel', array(
-                'title' => __('Slider Section', 'one-page'),
-                'description' => __('Allows you to set up Slider section for OnePage Theme.', 'one-page'), //Descriptive tooltip
-//            'priority' => '10',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Slider setting section
-         */
-        $wp_customize->add_section('slider_setting_section', array(
-                'title' => __('Settings', 'one-page'),
-                'description' => __('Allows you to change slider settings for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'slider_setting_panel',
-                'priority' => '10',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Slider #1 section
-         */
-        $wp_customize->add_section('slider_one_setting_section', array(
-                'title' => __('Slider #1', 'one-page'),
-                'description' => __('Allows you to set up slider one for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'slider_setting_panel',
-                'priority' => '11',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Slider #2 section
-         */
-        $wp_customize->add_section('slider_two_setting_section', array(
-                'title' => __('Slider #2', 'one-page'),
-                'description' => __('Allows you to set up slider two for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'slider_setting_panel',
-                'priority' => '12',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Slider #3 section
-         */
-        $wp_customize->add_section('slider_three_setting_section', array(
-                'title' => __('Slider #3', 'one-page'),
-                'description' => __('Allows you to set up slider three for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'slider_setting_panel',
-                'priority' => '13',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Slider #4 section
-         */
-        $wp_customize->add_section('slider_four_setting_section', array(
-                'title' => __('Slider #4', 'one-page'),
-                'description' => __('Allows you to set up slider four for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'slider_setting_panel',
-                'priority' => '14',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Slider #5 section
-         */
-        $wp_customize->add_section('slider_five_setting_section', array(
-                'title' => __('Slider #5', 'one-page'),
-                'description' => __('Allows you to set up slider five for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'slider_setting_panel',
-                'priority' => '15',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Slider transition section
-         */
-        $wp_customize->add_section('slider_transition_setting_section', array(
-                'title' => __('Slider Transition Effects', 'one-page'),
-                'description' => __('Allows you to set up slider transition effects for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'slider_setting_panel',
-                'priority' => '16',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         * Slider transition section
-         */
-        $wp_customize->add_section('slider_overlay_setting_section', array(
-                'title' => __('Slider Overlay Color Settings', 'one-page'),
-                'description' => __('Allows you to set up slider Overlay colors for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'slider_setting_panel',
-                'priority' => '17',
-                'capability' => 'edit_theme_options'
-            )
-        );
 
         /**
          * Service section panel
@@ -792,39 +764,6 @@ class Onepage_Customizer {
             )
         );
 
-        /**
-         * Footer section panel
-         * @return array
-         */
-        $wp_customize->add_panel('footer_setting_panel', array(
-                'title' => __('Footer Section', 'one-page'),
-                'description' => __('Allows you to set up footer for OnePage Theme.', 'one-page'), //Descriptive tooltip
-//            'priority' => '11',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         *  Footer color section
-         */
-        $wp_customize->add_section('footer_section_color_setting', array(
-                'title' => __('Color Settings', 'one-page'),
-                'description' => __('Allows you to set up footer section color for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'footer_setting_panel',
-                'priority' => '11',
-                'capability' => 'edit_theme_options'
-            )
-        );
-        /**
-         *  Footer content section
-         */
-        $wp_customize->add_section('footer_setting', array(
-                'title' => __('Settings', 'one-page'),
-                'description' => __('Allows you to set up footer section color for OnePage Theme.', 'one-page'), //Descriptive tooltip
-                'panel' => 'footer_setting_panel',
-                'priority' => '10',
-                'capability' => 'edit_theme_options'
-            )
-        );
         /**
          * Page setup
          */
@@ -1146,6 +1085,40 @@ class Onepage_Customizer {
                 'onepage_testimonial_3_cel2_job',
                 'onepage_testimonial_3_cel2_content'
             ),
+
+            'contact_setting_section' => array(
+                'onepage_contact_heading',
+                'onepage_contact_background'
+            ),
+            'pagefooter_setting_section' => [
+                'onepage_footer_logo',
+                'onepage_footer_address',
+                'onapage_footer_phone',
+                'onepage_footer_email'
+            ],
+            'pagefooter_social_setting_section' => [
+                'onepage_footer_social1',
+                'onepage_footer_social1thumb',
+                'onepage_footer_social2',
+                'onepage_footer_social2thumb',
+                'onepage_footer_social3',
+                'onepage_footer_social3thumb',
+                'onepage_footer_social4',
+                'onepage_footer_social4thumb',
+                'onepage_footer_social5',
+                'onepage_footer_social5thumb'
+            ],
+            'onepage_header_logo_setting_section' => [
+                'onepage_header_logo'
+            ],
+            'onepage_main_carousel_setting_section' => [
+                'onepage_slide1_image',
+                'onepage_slide2_image',
+                'onepage_slide3_image',
+                'onepage_slide4_image',
+            ],
+
+
             /**
              * Pricing panel setting
              */
@@ -1278,21 +1251,6 @@ class Onepage_Customizer {
             'contact_section_setting' => array(
                 'onepage_contact_send_button_text',
                 'onepage_contact_map_iframe'
-            ),
-            /**
-             * Footer sidebar panel settings
-             */
-            'footer_sidebar_section_color_setting' => array(
-                'onepage_footer_sidebar_bg_color'
-            ),
-            /**
-             * Footer panel settings
-             */
-            'footer_section_color_setting' => array(
-                'onepage_footer_bg_color'
-            ),
-            'footer_setting' => array(
-                'onepage_footer_copyright_text'
             ),
             /**
              * Page animation settings
@@ -1441,311 +1399,6 @@ You can refer the codes from links below. %s', 'one-page') . '<br>' . esc_attr('
                 'setting_type' => 'sort',
                 'choices' => $choices,
                 'default' => onepage_sections_default()
-            ),
-            //slider One settings
-            'onepage_slider_image_1' => array(
-                'id' => 'onepage_options[onepage_slider_image_1]',
-                'label' => __('Image', 'one-page'),
-                'description' => __('Upload image for slider', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'image',
-                'default' => ''
-            ),
-            'onepage_slider_heading_1' => array(
-                'id' => 'onepage_options[onepage_slider_heading_1]',
-                'label' => __('Heading', 'one-page'),
-                'description' => __('Enter heading for slider', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'textarea',
-                'default' => ''
-            ),
-            'onepage_slider_subheading_1' => array(
-                'id' => 'onepage_options[onepage_slider_subheading_1]',
-                'label' => __('Sub Heading', 'one-page'),
-                'description' => __('Enter sub heading for slider', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'textarea',
-                'default' => ''
-            ),
-            'onepage_slider_button_text_1' => array(
-                'id' => 'onepage_options[onepage_slider_button_text_1]',
-                'label' => __('Button Text', 'one-page'),
-                'description' => __('Enter text for button', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'text',
-                'default' => ''
-            ),
-            'onepage_slider_button_link_1' => array(
-                'id' => 'onepage_options[onepage_slider_button_link_1]',
-                'label' => __('Button Link', 'one-page'),
-                'description' => __('Enter the button link', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'link',
-                'default' => ''
-            ),
-            //slider two settings
-            'onepage_slider_image_2' => array(
-                'id' => 'onepage_options[onepage_slider_image_2]',
-                'label' => __('Image', 'one-page'),
-                'description' => __('Upload image for slider', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'image',
-                'default' => ''
-            ),
-            'onepage_slider_heading_2' => array(
-                'id' => 'onepage_options[onepage_slider_heading_2]',
-                'label' => __('Heading', 'one-page'),
-                'description' => __('Enter heading for slider', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'textarea',
-                'default' => ''
-            ),
-            'onepage_slider_subheading_2' => array(
-                'id' => 'onepage_options[onepage_slider_subheading_2]',
-                'label' => __('Sub Heading', 'one-page'),
-                'description' => __('Enter sub heading for slider', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'textarea',
-                'default' => ''
-            ),
-            'onepage_slider_button_text_2' => array(
-                'id' => 'onepage_options[onepage_slider_button_text_2]',
-                'label' => __('Button Text', 'one-page'),
-                'description' => __('Enter text for button', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'text',
-                'default' => ''
-            ),
-            'onepage_slider_button_link_2' => array(
-                'id' => 'onepage_options[onepage_slider_button_link_2]',
-                'label' => __('Button Link', 'one-page'),
-                'description' => __('Enter the button link', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'link',
-                'default' => ''
-            ),
-            //slider three settings
-            'onepage_slider_image_3' => array(
-                'id' => 'onepage_options[onepage_slider_image_3]',
-                'label' => __('Image', 'one-page'),
-                'description' => __('Upload image for slider', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'image',
-                'default' => ''
-            ),
-            'onepage_slider_heading_3' => array(
-                'id' => 'onepage_options[onepage_slider_heading_3]',
-                'label' => __('Heading', 'one-page'),
-                'description' => __('Enter heading for slider', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'textarea',
-                'default' => ''
-            ),
-            'onepage_slider_subheading_3' => array(
-                'id' => 'onepage_options[onepage_slider_subheading_3]',
-                'label' => __('Sub Heading', 'one-page'),
-                'description' => __('Enter sub heading for slider', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'textarea',
-                'default' => ''
-            ),
-            'onepage_slider_button_text_3' => array(
-                'id' => 'onepage_options[onepage_slider_button_text_3]',
-                'label' => __('Button Text', 'one-page'),
-                'description' => __('Enter text for button', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'text',
-                'default' => ''
-            ),
-            'onepage_slider_button_link_3' => array(
-                'id' => 'onepage_options[onepage_slider_button_link_3]',
-                'label' => __('Button Link', 'one-page'),
-                'description' => __('Enter the button link', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'link',
-                'default' => ''
-            ),
-            //slider four settings
-            'onepage_slider_image_4' => array(
-                'id' => 'onepage_options[onepage_slider_image_4]',
-                'label' => __('Image', 'one-page'),
-                'description' => __('Upload image for slider', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'image',
-                'default' => ''
-            ),
-            'onepage_slider_heading_4' => array(
-                'id' => 'onepage_options[onepage_slider_heading_4]',
-                'label' => __('Heading', 'one-page'),
-                'description' => __('Enter heading for slider', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'textarea',
-                'default' => ''
-            ),
-            'onepage_slider_subheading_4' => array(
-                'id' => 'onepage_options[onepage_slider_subheading_4]',
-                'label' => __('Sub Heading', 'one-page'),
-                'description' => __('Enter sub heading for slider', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'textarea',
-                'default' => ''
-            ),
-            'onepage_slider_button_text_4' => array(
-                'id' => 'onepage_options[onepage_slider_button_text_4]',
-                'label' => __('Button Text', 'one-page'),
-                'description' => __('Enter text for button', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'text',
-                'default' => ''
-            ),
-            'onepage_slider_button_link_4' => array(
-                'id' => 'onepage_options[onepage_slider_button_link_4]',
-                'label' => __('Button Link', 'one-page'),
-                'description' => __('Enter the button link', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'link',
-                'default' => ''
-            ),
-            //slider five settings
-            'onepage_slider_image_5' => array(
-                'id' => 'onepage_options[onepage_slider_image_5]',
-                'label' => __('Image', 'one-page'),
-                'description' => __('Upload image for slider', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'image',
-                'default' => ''
-            ),
-            'onepage_slider_heading_5' => array(
-                'id' => 'onepage_options[onepage_slider_heading_5]',
-                'label' => __('Heading', 'one-page'),
-                'description' => __('Enter heading for slider', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'textarea',
-                'default' => ''
-            ),
-            'onepage_slider_subheading_5' => array(
-                'id' => 'onepage_options[onepage_slider_subheading_5]',
-                'label' => __('Sub Heading', 'one-page'),
-                'description' => __('Enter sub heading for slider', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'textarea',
-                'default' => ''
-            ),
-            'onepage_slider_button_text_5' => array(
-                'id' => 'onepage_options[onepage_slider_button_text_5]',
-                'label' => __('Button Text', 'one-page'),
-                'description' => __('Enter text for button', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'text',
-                'default' => ''
-            ),
-            'onepage_slider_button_link_5' => array(
-                'id' => 'onepage_options[onepage_slider_button_link_5]',
-                'label' => __('Button Link', 'one-page'),
-                'description' => __('Enter the button link', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'link',
-                'default' => ''
-            ),
-            'onepage_slider_trans_1' => array(
-                'id' => 'onepage_options[onepage_slider_trans_1]',
-                'label' => __('Slider #1 Transition Effect', 'one-page'),
-                'description' => __('Set transition effect for the slide', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'select',
-                'default' => 'horizontal',
-                'choices' => array(
-                    'horizontal' => 'Horizontal',
-                    'vertical' => 'Vertical'
-                )
-            ),
-            'onepage_slider_trans_2' => array(
-                'id' => 'onepage_options[onepage_slider_trans_2]',
-                'label' => __('Slider #2 Transition Effect', 'one-page'),
-                'description' => __('Set transition effect for the slide', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'select',
-                'default' => 'horizontal',
-                'choices' => array(
-                    'horizontal' => 'Horizontal',
-                    'vertical' => 'Vertical'
-                )
-            ),
-            'onepage_slider_trans_3' => array(
-                'id' => 'onepage_options[onepage_slider_trans_3]',
-                'label' => __('Slider #3 Transition Effect', 'one-page'),
-                'description' => __('Set transition effect for the slide', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'select',
-                'default' => 'horizontal',
-                'choices' => array(
-                    'horizontal' => 'Horizontal',
-                    'vertical' => 'Vertical'
-                )
-            ),
-            'onepage_slider_trans_4' => array(
-                'id' => 'onepage_options[onepage_slider_trans_4]',
-                'label' => __('Slider #4 Transition Effect', 'one-page'),
-                'description' => __('Set transition effect for the slide', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'select',
-                'default' => 'horizontal',
-                'choices' => array(
-                    'horizontal' => 'Horizontal',
-                    'vertical' => 'Vertical'
-                )
-            ),
-            'onepage_slider_trans_5' => array(
-                'id' => 'onepage_options[onepage_slider_trans_5]',
-                'label' => __('Slider #5 Transition Effect', 'one-page'),
-                'description' => __('Set transition effect for the slide', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'select',
-                'default' => 'horizontal',
-                'choices' => array(
-                    'horizontal' => 'Horizontal',
-                    'vertical' => 'Vertical'
-                )
-            ),
-            'onepage_slider_overlay_1' => array(
-                'id' => 'onepage_options[onepage_slider_overlay_1]',
-                'label' => __('Slider #1 Overlay Color', 'one-page'),
-                'description' => __('Set overlay color for the slide', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'alpha_color',
-                'default' => 'rgba(29, 105, 165, 0.69)'
-            ),
-            'onepage_slider_overlay_2' => array(
-                'id' => 'onepage_options[onepage_slider_overlay_2]',
-                'label' => __('Slider #2 Overlay Color', 'one-page'),
-                'description' => __('Set overlay color for the slide', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'alpha_color',
-                'default' => 'rgba(29, 105, 165, 0.69)'
-            ),
-            'onepage_slider_overlay_3' => array(
-                'id' => 'onepage_options[onepage_slider_overlay_3]',
-                'label' => __('Slider #3 Overlay Color', 'one-page'),
-                'description' => __('Set overlay color for the slide', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'alpha_color',
-                'default' => 'rgba(29, 105, 165, 0.69)'
-            ),
-            'onepage_slider_overlay_4' => array(
-                'id' => 'onepage_options[onepage_slider_overlay_4]',
-                'label' => __('Slider #4 Overlay Color', 'one-page'),
-                'description' => __('Set overlay color for the slide', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'alpha_color',
-                'default' => 'rgba(29, 105, 165, 0.69)'
-            ),
-            'onepage_slider_overlay_5' => array(
-                'id' => 'onepage_options[onepage_slider_overlay_5]',
-                'label' => __('Slider #5 Overlay Color', 'one-page'),
-                'description' => __('Set overlay color for the slide', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'alpha_color',
-                'default' => 'rgba(29, 105, 165, 0.69)'
             ),
             /**
              * Service section
@@ -2657,7 +2310,176 @@ You can refer the codes from links below. %s', 'one-page') . '<br>' . esc_attr('
                 'default' => ''
             ),
 
+            'onepage_contact_background' => array(
+                'id' => 'onepage_options[onepage_contact_background]',
+                'label' => __('Contact section Heading', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'image',
+                'default' => ''
+            ),
+            'onepage_contact_heading' => array(
+                'id' => 'onepage_options[onepage_contact_heading]',
+                'label' => __('Contact Background Image', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ),
 
+            'onepage_footer_logo' => array(
+                'id' => 'onepage_options[onepage_footer_logo]',
+                'label' => __('Footer Logo', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'image',
+                'default' => ''
+            ),
+            'onepage_footer_address' => array(
+                'id' => 'onepage_options[onepage_footer_address]',
+                'label' => __('Footer address', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ),
+            'onapage_footer_phone' => array(
+                'id' => 'onepage_options[onapage_footer_phone]',
+                'label' => __('Footer Phone', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ),
+            'onepage_footer_email' => array(
+                'id' => 'onepage_options[onepage_footer_email]',
+                'label' => __('Footer email', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ),
+
+            'onepage_footer_social1' => array(
+                'id' => 'onepage_options[onepage_footer_social1]',
+                'label' => __('Footer Social button #1 Link', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ),
+            'onepage_footer_social1thumb' => array(
+                'id' => 'onepage_options[onepage_footer_social1thumb]',
+                'label' => __('Footer Social button #1 font-awesome image code( ex: fa-instagram )', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ),
+            'onepage_footer_social2' => array(
+                'id' => 'onepage_options[onepage_footer_social2]',
+                'label' => __('Footer Social button #2 Link', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ),
+            'onepage_footer_social2thumb' => array(
+                'id' => 'onepage_options[onepage_footer_onepage_footer_social2thumbemail]',
+                'label' => __('Footer Social button #2 font-awesome image code( ex: fa-instagram )', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ),
+            'onepage_footer_social3' => array(
+                'id' => 'onepage_options[onepage_footer_social3]',
+                'label' => __('Footer Social button #3 Link', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ),
+            'onepage_footer_social3thumb' => array(
+                'id' => 'onepage_options[onepage_footer_onepage_footer_social3thumbemail]',
+                'label' => __('Footer Social button #3 font-awesome image code( ex: fa-instagram )', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ),
+            'onepage_footer_social4' => array(
+                'id' => 'onepage_options[onepage_footer_social4]',
+                'label' => __('Footer Social button #4 Link', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ),
+            'onepage_footer_social4thumb' => array(
+                'id' => 'onepage_options[onepage_footer_onepage_footer_social4thumbemail]',
+                'label' => __('Footer Social button #4 font-awesome image code( ex: fa-instagram )', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ),
+            'onepage_footer_social5' => array(
+                'id' => 'onepage_options[onepage_footer_social5]',
+                'label' => __('Footer Social button #5 Link', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ),
+            'onepage_footer_social5thumb' => array(
+                'id' => 'onepage_options[onepage_footer_social5thumb]',
+                'label' => __('Footer Social button #5 font-awesome image code( ex: fa-instagram )', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'text',
+                'default' => ''
+            ),
+            'onepage_slide1_image' => array(
+                'id' => 'onepage_options[onepage_slide1_image]',
+                'label' => __('Header Slide #1 Image', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'image',
+                'default' => ''
+            ),
+            'onepage_slide2_image' => array(
+                'id' => 'onepage_options[onepage_slide2_image]',
+                'label' => __('Header Slide #2 Image', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'image',
+                'default' => ''
+            ),
+            'onepage_slide3_image' => array(
+                'id' => 'onepage_options[onepage_slide3_image]',
+                'label' => __('Header Slide #3 Image', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'image',
+                'default' => ''
+            ),
+            'onepage_slide4_image' => array(
+                'id' => 'onepage_options[onepage_slide4_image]',
+                'label' => __('Header Slide #4 Image', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'image',
+                'default' => ''
+            ),
+            'onepage_header_logo' => array(
+                'id' => 'onepage_options[onepage_header_logo]',
+                'label' => __('Header Logo', 'one-page'),
+                'description' => __('', 'one-page'),
+                'type' => 'option',
+                'setting_type' => 'image',
+                'default' => ''
+            ),
 
 
             'onepage_story_iframe' => array(
@@ -3464,28 +3286,6 @@ You can refer the codes from links below. %s', 'one-page') . '<br>' . esc_attr('
                 'setting_type' => 'editor',
                 'default' => ''
             ),
-            /**
-             * Footer sidebar panel settings
-             */
-            'onepage_footer_sidebar_bg_color' => array(
-                'id' => 'onepage_options[onepage_footer_sidebar_bg_color]',
-                'label' => __('Background Color', 'one-page'),
-                'description' => __('Set background color for the section', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'color',
-                'default' => 'fff'
-            ),
-            /**
-             * Footer panel settings
-             */
-            'onepage_footer_bg_color' => array(
-                'id' => 'onepage_options[onepage_footer_bg_color]',
-                'label' => __('Background Color', 'one-page'),
-                'description' => __('Set background color for the section', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'color',
-                'default' => '#0d141b'
-            ),
             'onepage_fb_link' => array(
                 'id' => 'onepage_options[onepage_fb_link]',
                 'label' => __('Facebook Link', 'one-page'),
@@ -3532,14 +3332,6 @@ You can refer the codes from links below. %s', 'one-page') . '<br>' . esc_attr('
                 'description' => __('Enter linkedIn link', 'one-page'),
                 'type' => 'option',
                 'setting_type' => 'link',
-                'default' => ''
-            ),
-            'onepage_footer_copyright_text' => array(
-                'id' => 'onepage_options[onepage_footer_copyright_text]',
-                'label' => __('Footer Copyright Text', 'one-page'),
-                'description' => __('Enter footer copyright text', 'one-page'),
-                'type' => 'option',
-                'setting_type' => 'text',
                 'default' => ''
             ),
             /**

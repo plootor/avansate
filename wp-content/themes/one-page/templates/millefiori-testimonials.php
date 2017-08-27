@@ -3,11 +3,11 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h4 class="section-name fade-animate"><?php echo onepage_get_option('onepage_testimonial_main_heading', 'Testimonials'); ?><i class="fa fa-minus" aria-hidden="true"></i></h4>
+        <h4 class="section-name"><?php echo onepage_get_option('onepage_testimonial_main_heading', 'Testimonials'); ?><i class="fa fa-minus" aria-hidden="true"></i></h4>
       </div>
     </div>
     <div class="row">
-      <div id="carousel-reviews" class="carousel slide fade-animate delay4" data-ride="carousel" data-interval="15000">
+      <div id="carousel-reviews" class="carousel slide" data-ride="carousel" data-interval="15000">
         <div class="carousel-inner">
           <div class="item active">
             <div class="col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1 testimonial-cell">

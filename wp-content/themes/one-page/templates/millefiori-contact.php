@@ -1,5 +1,6 @@
 <!-- Contact Section -->
-<section id="contact">
+<section id="contact" <?php echo onepage_get_option('onepage_contact_background') ?
+    'style="background-image: url(' . onepage_get_option('onepage_contact_background', '') . ')"' : ''; ?>>
   <div class="bg-filter"></div>
   <div class="container">
     <div class="row">
@@ -9,7 +10,7 @@
     </div>
     <div class="row">
       <div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
-        <h1 class="contact-heading section-heading fade-animate delay4">say hello</h1>
+        <h1 class="contact-heading section-heading fade-animate delay4"><?php echo onepage_get_option('onepage_contact_heading', 'say hello'); ?></h1>
         <form name="sentMessage" id="contactForm" novalidate>
           <div class="row">
             <div class="form-group col-md-12">

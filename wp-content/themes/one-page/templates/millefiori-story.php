@@ -9,7 +9,7 @@
     <div class="row pos-r">
       <div class="col-md-10 col-md-offset-1">
         <h1 class="about-heading section-heading fade-animate "><?php echo onepage_get_option('onepage_story_heading', 'once upon a time'); ?></h1>
-        <div class="about-text fade-animate">
+        <div class="about-text">
           <?php echo onepage_get_option('onepage_story_iframe', '
           <p>We launched three years ago and loved it every second. At the time
             I was just a man with an ideea but 2 weeks later I was a man with a plan. We jumped on this

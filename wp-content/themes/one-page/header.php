@@ -28,7 +28,7 @@
                   <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand navbar-brand2 page-scroll" href="#page-top">
-                  <img class="img-responsive img-centered" src="assets/images/img/logo1.png" alt="Logo">
+                  <img class="img-responsive img-centered" src="<?php echo onepage_get_option('onepage_header_logo', ONEPAGE_DIR_URI . 'assets/images/img/logo1.png'); ?>" alt="Logo">
                 </a>
               </div>
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -48,7 +48,7 @@
                     </li>
                     <li class="logo">
                       <a class="navbar-brand page-scroll" href="#page-top">
-                        <img class="img-responsive img-centered" src="<?php echo ONEPAGE_DIR_URI ?>assets/images/img/logo1.png" alt="">
+                        <img class="img-responsive img-centered" src="<?php echo onepage_get_option('onepage_header_logo', ONEPAGE_DIR_URI . 'assets/images/img/logo1.png'); ?>" alt="">
                       </a>
                     </li>
                     <li>
@@ -76,10 +76,14 @@
             </ol>
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
-              <div class="item carusel1 active"></div>
-              <div class="item carusel2"></div>
-              <div class="item carusel3"></div>
-              <div class="item carusel4"></div>
+              <div class="item carusel1 active" <?php echo onepage_get_option('onepage_slide1_image') ?
+                  'style="background-image: url(' . onepage_get_option('onepage_slide1_image', '') . ')"' : ''; ?>></div>
+              <div class="item carusel2" <?php echo onepage_get_option('onepage_slide2_image') ?
+                  'style="background-image: url(' . onepage_get_option('onepage_slide2_image', '') . ')"' : ''; ?>></div>
+              <div class="item carusel3" <?php echo onepage_get_option('onepage_slide3_image') ?
+                  'style="background-image: url(' . onepage_get_option('onepage_slide3_image', '') . ')"' : ''; ?>></div>
+              <div class="item carusel4" <?php echo onepage_get_option('onepage_slide4_image') ?
+                  'style="background-image: url(' . onepage_get_option('onepage_slide4_image', '') . ')"' : ''; ?>></div>
             </div>
           </div>
         </header>

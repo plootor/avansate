@@ -421,18 +421,21 @@ header {
   -moz-background-size: cover !important;
   -o-background-size: cover !important;
   background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 .carousel-inner .carusel4 {
-  background: url("../img/flowers-2044789_1920.jpg") no-repeat center top;
+  background-image: url("../img/flowers-2044789_1920.jpg");
 }
 .carousel-inner .carusel3 {
-  background: url("../img/peonies-2317596_1920.jpg") no-repeat center center;
+  background-image: url("../img/peonies-2317596_1920.jpg");
+  background-position: center center;
 }
 .carousel-inner .carusel2 {
-  background: url("../img/basket-1846135_1920.jpg") no-repeat center top;
+  background-image: url("../img/basket-1846135_1920.jpg");
 }
 .carousel-inner .carusel1 {
-  background: url("../img/bouquet-of-flowers-1149099_1920.jpg") no-repeat center top;
+  background-image: url("../img/bouquet-of-flowers-1149099_1920.jpg");
 }
 .carousel-fade .carousel-inner .item {
   transition-property: opacity;
